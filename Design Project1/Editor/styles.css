@@ -1,0 +1,15 @@
+body{
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+}
+
+.main_cont{
+    border: 1px black solid;
+    min-height: 10vh;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+div{
+    min-height: 5vh;
+}
