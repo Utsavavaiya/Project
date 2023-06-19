@@ -1,19 +1,19 @@
 {
   "db": [
     {
-      "name": "upload",
-      "command": "V120",
-      "text": "Upload",
-      "isTesting": false,
-      "htmlElement": "select",
+      "name": "sdhjkhudsa",
+      "command": "c dshv",
+      "text": "sdbchgfds",
+      "isTesting": "sdbhjfjd",
+      "htmlElement": "dsf bm",
       "id": 0
     },
     {
-      "name": "list",
-      "command": "M20",
-      "text": "List all",
-      "isTesting": false,
-      "htmlElement": "button",
+      "name": "",
+      "command": "",
+      "text": "",
+      "isTesting": "",
+      "htmlElement": "",
       "id": 1
     },
     {
@@ -41,11 +41,11 @@
       "id": 4
     },
     {
-      "name": "temperature_active",
-      "command": "G10 R{{temperature_active}}",
-      "text": "Active temperature",
-      "isTesting": false,
-      "htmlElement": "array",
+      "name": "utsav",
+      "command": "oa",
+      "text": "test",
+      "isTesting": "true",
+      "htmlElement": "12",
       "id": 5
     },
     {
@@ -299,14 +299,6 @@
       "isTesting": true,
       "htmlElement": "button",
       "id": 34
-    },
-    {
-      "name": "utsav",
-      "command": "okay",
-      "text": "okay2",
-      "isTesting": "testing",
-      "htmlElement": "html",
-      "id": 35
     }
   ]
 }

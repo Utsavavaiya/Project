@@ -12,7 +12,7 @@ function App() {
       <Link to ="/editor">Editor</Link> */}
       <Routes>
       <Route exact path ="/" element = {<Home />} />
-      <Route path ="/editor" element = {<Editor />} />
+      <Route path ="/editor/:id" element = {<Editor />} />
       </Routes>
     </Router>
     </div>
