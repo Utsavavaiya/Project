@@ -1,0 +1,312 @@
+{
+  "db": [
+    {
+      "name": "upload",
+      "command": "V120",
+      "text": "Upload",
+      "isTesting": false,
+      "htmlElement": "select",
+      "id": 0
+    },
+    {
+      "name": "list",
+      "command": "M20",
+      "text": "List all",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 1
+    },
+    {
+      "name": "start_print",
+      "command": "M32",
+      "text": "Start",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 2
+    },
+    {
+      "name": "get_file_info",
+      "command": "M36",
+      "text": "Get file info",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 3
+    },
+    {
+      "name": "emergency_stop",
+      "command": "M112",
+      "text": "Emergency stop",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 4
+    },
+    {
+      "name": "temperature_active",
+      "command": "G10 R{{temperature_active}}",
+      "text": "Active temperature",
+      "isTesting": false,
+      "htmlElement": "array",
+      "id": 5
+    },
+    {
+      "name": "temperature_standby",
+      "command": "G10 S{{temperature_standby}}",
+      "text": "Standby temperature",
+      "isTesting": false,
+      "htmlElement": "array",
+      "id": 6
+    },
+    {
+      "name": "home_all",
+      "command": "G28",
+      "text": "Home all",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 7
+    },
+    {
+      "name": "movement",
+      "isTesting": false,
+      "htmlElement": "selfArray",
+      "command": "",
+      "selfArray": [
+        0.1,
+        1,
+        10,
+        50
+      ],
+      "text": "",
+      "id": 8
+    },
+    {
+      "name": "move_x",
+      "command": "G1 H2 X{{move_x}}",
+      "text": "",
+      "isTesting": false,
+      "htmlElement": "button_group",
+      "id": 9
+    },
+    {
+      "name": "move_y",
+      "command": "G1 H2 Y{{move_y}}",
+      "text": "",
+      "isTesting": false,
+      "htmlElement": "button_group",
+      "id": 10
+    },
+    {
+      "name": "move_z",
+      "command": "G1 H2 Z{{move_z}}",
+      "text": "",
+      "htmlElement": "button_group",
+      "id": 11
+    },
+    {
+      "name": "home_x",
+      "command": "G28 X",
+      "text": "",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 12
+    },
+    {
+      "name": "home_y",
+      "command": "G28 Y",
+      "text": "",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 13
+    },
+    {
+      "name": "home_z",
+      "command": "G28 Z",
+      "text": "",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 14
+    },
+    {
+      "name": "feedamount",
+      "isTesting": false,
+      "htmlElement": "selfArray",
+      "command": "",
+      "selfArray": [
+        100,
+        50,
+        20,
+        10,
+        5,
+        1
+      ],
+      "text": "",
+      "id": 15
+    },
+    {
+      "name": "feedrate",
+      "isTesting": false,
+      "htmlElement": "selfArray",
+      "command": "",
+      "selfArray": [
+        50,
+        10,
+        5,
+        2,
+        1
+      ],
+      "text": "",
+      "id": 16
+    },
+    {
+      "name": "extrude",
+      "command": "G1 H2 E{{feedamount}} F{{feedrate}}",
+      "text": "Extrude",
+      "isTesting": false,
+      "htmlElement": "radio",
+      "id": 17
+    },
+    {
+      "name": "retract",
+      "command": "G1 H2 E-{{feedamount}} F{{feedrate}}",
+      "text": "Retract",
+      "isTesting": false,
+      "htmlElement": "radio",
+      "id": 18
+    },
+    {
+      "name": "fan_speed",
+      "command": "M106 S{{fan_speed}} P{{index}}",
+      "text": "Fan speed",
+      "isTesting": false,
+      "htmlElement": "range",
+      "id": 19
+    },
+    {
+      "name": "pause_print",
+      "command": "M25",
+      "text": "Pause",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 20
+    },
+    {
+      "name": "plus_z_babystepping",
+      "command": "M290 S{{plus_z_babystepping}}",
+      "text": "+Z babystepping",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 21
+    },
+    {
+      "name": "minus_z_babystepping",
+      "command": "M290 S-{{minus_z_babystepping}}",
+      "text": "-Z babystepping",
+      "isTesting": false,
+      "htmlElement": "button",
+      "id": 22
+    },
+    {
+      "name": "extrusion_factor",
+      "command": "M221 S{{extrusion_factor}}",
+      "text": "Extruder factor",
+      "isTesting": false,
+      "htmlElement": "range",
+      "id": 23
+    },
+    {
+      "name": "speed_factor",
+      "command": "M220 S{{speed_factor}}",
+      "text": "Speed factor",
+      "isTesting": false,
+      "htmlElement": "range",
+      "id": 24
+    },
+    {
+      "name": "test_button_1",
+      "command": "",
+      "text": "Button 1",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 25
+    },
+    {
+      "name": "test_button_2",
+      "command": "",
+      "text": "Button 2",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 26
+    },
+    {
+      "name": "test_button_3",
+      "command": "",
+      "text": "Button 3",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 27
+    },
+    {
+      "name": "test_button_4",
+      "command": "",
+      "text": "Button 4",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 28
+    },
+    {
+      "name": "test_button_5",
+      "command": "",
+      "text": "Button 5",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 29
+    },
+    {
+      "name": "test_button_6",
+      "command": "",
+      "text": "Button 6",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 30
+    },
+    {
+      "name": "test_button_7",
+      "command": "",
+      "text": "Button 7",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 31
+    },
+    {
+      "name": "test_button_8",
+      "command": "",
+      "text": "Button 8",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 32
+    },
+    {
+      "name": "test_button_9",
+      "command": "",
+      "text": "Button 9",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 33
+    },
+    {
+      "name": "test_button_10",
+      "command": "",
+      "text": "Button 10",
+      "isTesting": true,
+      "htmlElement": "button",
+      "id": 34
+    },
+    {
+      "name": "utsav",
+      "command": "okay",
+      "text": "okay2",
+      "isTesting": "testing",
+      "htmlElement": "html",
+      "id": 35
+    }
+  ]
+}
